@@ -10,7 +10,7 @@ import { InteractiveList } from './components/InteractiveList';
 import { InterviewList } from './components/InterviewList';
 import { CourseSection } from './components/CourseSection';
 import { Mail, Phone, MapPin, Link as LinkIcon, BookOpen, Award, MonitorPlay, Star, User, Presentation, LayoutDashboard, GraduationCap, Mic } from 'lucide-react';
-import portraitImage from './photo.jpg.png';
+import portraitImage from './photo.png';
 
 const App: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -198,7 +198,7 @@ const App: React.FC = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-serif text-[#1A1A1A] mb-8 mt-16 border-b border-gray-200 pb-4">Признание и проекты</h3>
+              <h3 className="text-2xl font-serif text-[#1A1A1A] mb-8 mt-16 border-b border-gray-200 pb-4">Достижения и проекты</h3>
               
               <div className="relative border-l border-gray-300 ml-0 lg:ml-5 space-y-10 pb-4 mt-8">
                 <div className="relative pl-8 lg:pl-10">
@@ -295,9 +295,9 @@ const App: React.FC = () => {
       </div>
 
       {/* Floating Navigation Buttons */}
-      <div className="fixed bottom-6 md:bottom-auto md:top-1/2 md:-translate-y-1/2 right-1 md:right-1 lg:right-4 xl:right-8 z-50 pointer-events-none">
-        <div className={`flex flex-col gap-3 transition-all duration-300 ${
-          showScrollTop ? 'opacity-100 translate-x-0 pointer-events-auto' : 'opacity-0 translate-x-10 pointer-events-none'
+      <div className="fixed bottom-6 md:bottom-72 lg:bottom-12 right-4 md:right-6 lg:right-8 z-50 pointer-events-none">
+        <div className={`flex flex-col gap-3 transition-all duration-500 ${
+          showScrollTop ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-16 pointer-events-none'
         }`}>
           <button
             onClick={() => scrollToSection('about')}
